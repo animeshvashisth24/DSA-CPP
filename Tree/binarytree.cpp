@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 /* A binary tree node has data, pointer to left child
 and a pointer to right child */
+
 struct node
 {
     int data;
@@ -36,7 +36,6 @@ node *InsertNode(node *root, int data)
     // Else, do level order traversal until we find an empty
     // place, i.e. either left child or right child of some
     // node is pointing to NULL.
-
     queue<node *> q;
     q.push(root);
     while (!q.empty())
